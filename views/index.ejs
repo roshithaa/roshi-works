@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/PROJCSS.css">
+    <title>Fun and Festive</title>
+    <nav class="centered-pinned-nav">
+      <a href="#home">HOME</a>
+      <a href="#EVENTS MENU">EVENTS MENU</a>
+      <a href="#about">ABOUT</a>
+      <a href="#Get in Touch">GET IN TOUCH</a>
+      <a href="#MEET THE TEAM">MEET THE TEAM</a>
+    </nav>
+    <section class="hero" style="background-image: url('img/ing.jpg');">
+      <div class="container">
+        <div class="hero-content">
+          <h1 size="7">FUN AND FESTIVE</h1>
+          <a href="login" class="scroll-down-btn">Let's Login/Signup</a>
+          
+          <div id="bottom"></div>
+        </div>
+      </div>
+    </section>
+  </head>
+  <body>
+    <p>
+      <i>
+        <font color="#80461B">From weddings to corporate parties, we'll help you create an event that everyone will remember.</font>
+      </I>
+    </p>
+    <img src="img/1.jpg" alt="Image of a Decor" style="width: 200px; height: 200px; " />
+    <img src="img/2.jpg" alt="Image of a Decor" style="width: 200px; height: 200px; " />
+    <img src="img/3.jpg" alt="Image of a Decor" style="width: 200px; height: 200px; " />
+    <img src="img/4.jpg" alt="Image of a Decor" style="width: 200px; height: 200px; " />
+    <img src="img/5.jpg" alt="Image of a Decor" style="width: 200px; height: 200px; " />
+    <img src="img/6.jpg" alt="Image of a Decor" style="width: 200px; height: 200px; " />
+    <img src="img/7.jpg" alt="Image of a Decor" style="width: 200px; height: 200px; " />
+    <section class="MEET THE TEAM" id="MEET THE TEAM">
+      <I>
+        <p1 Style="text-align: center;">Meet the Team</p1>
+      </I>
+      <div class="container">
+        <img src="img/roshii.jpg" alt="Roshi Image" width="400" height="400">
+        <b>
+          <I>
+            <h3 style="color: #CD7F32;">ROSHITHA</h3>
+          </I>
+        </b>
+        <p style="color: #CD7F32;">Roshitha started with F&F at September.Her intuition and natural ability to interact with people along with her creative out of the box thinking are just a few of the qualities she brings to each event she plans. Her love of events began when she helped plan her sisters wedding by calling venues and vendors and dreaming up designs. <br> Favorite Quote: “What if it turns out better than you ever expected?” </p>
+      </div>
+      <div class="container">
+        <img src="img/ramu.jpg" alt="Ramu img" width="300" height="400">
+        <b>
+          <I>
+            <h3 style="color: #CD7F32;">RAMU</h3>
+          </I>
+        </b>
+        <p style="color: #CD7F32;">Ramu joined to just handle the front end part but took initiative to handle everything require to complete portal.He quickly fell in love with all things coordinating and planning, and jumped head first into the season.He brings his passion, attention to detail, and ability to adapt to any situation to every event he coordinates. <br> Favorite Quote: “Leave footprints and kindness wherever you go” </p>
+      </div>
+      <div class="container">
+        <img src="img/keerthi.jpg" alt="Keerthi img" width="300" height="350">
+        <b>
+          <I>
+            <h3 style="color: #CD7F32;">KEERTHI</h3>
+          </i>
+        </b>
+        <p style="color: #CD7F32;">Keerthi is a strategic associate with a passion for creating successful products. He has a deep understanding of user needs and is skilled at translating those needs into successful products.She brings creativity, attentiveness, organizational skills and stellar time management skills to each wedding she coordinates. <br> Favorite Quote: “The most important thing is to enjoy your life- to be happy- t’s all that matters” </p>
+      </div>
+    </section>
+    <section class="EVENTS MENU" id="EVENTS MENU">
+      <div class="container"></div>
+    </section>
+    <I>
+      <p1 Style="text-align: center;">Our Events</p1>
+    </I>
+    <img src="img/teddy.jpg" alt="Teddy Image" width="200" height="200">
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <ul class="menu">
+            <% events.forEach(event => { %>
+            <li>
+              <a href="<%= event.page %>" style="text-decoration: underline;" class="enhanced-link"><%= event.name %></a>
+            </li>
+            <br>
+            <% }); %> 
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="about" id="about">
+      <I>
+        <p1 Style="text-align: center;">About Us</p1>
+      </I>
+      <div class="container">
+        <div class="about-content">
+          <p style="color: #CD7F32;">We're passionate about creating unforgettable events that exceed your expectations. We have a team of experienced and creative event professionals who will work closely with you to understand your vision and bring it to life. <br> We believe that every event is unique, and we take a personalized approach to each of our clients. We'll work with you to develop a custom event plan that fits your budget, style, and needs. <br> We're committed to providing our clients with the highest level of service and attention to detail. We'll go the extra mile to make sure your event is a success. </p>
+        </div>
+      </div>
+    </section>
+    <img src="img/teddy2.jpg" alt="Teddy Image" width="300" height="300">
+    <section class="Get in Touch" id="Get in Touch">
+      <I>
+        <p1 Style="text-align: center;">Get in Touch</p1>
+      </I>
+      <div class="container"></div>
+      </div>
+    </section>
+    <section id="contact">
+      <form action="mailto:youremail@example.com">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="Your name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+          event.preventDefault();
+          // Send the form data using AJAX or Fetch API
+          // Clear the form fields
+          document.getElementById('name').value = '';
+          document.getElementById('email').value = '';
+          document.getElementById('message').value = '';
+          // Display a success message
+          alert('Your message has been sent!');
+        });
+      </script>
+    </section>
+    </head>
+  </body>

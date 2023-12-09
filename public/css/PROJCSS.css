@@ -1,0 +1,159 @@
+.hero {
+  background-image: url('/Users/rparuchuri/Desktop/ing.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.hero__content {
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+  background-color: #CD7F32; /* Set background color to bronze */
+  Color:wine; /* Set text color to black for contrast */
+  padding: 10px; /* Add some padding to the header */
+}
+p1 {
+  background-color: white; /* Set background color to red */
+  color: brown; /* Set text color to white for contrast */
+  padding: 10px; /* Add some padding to the header */
+  font-size: 2.3rem;
+  line-height: 2.0;
+}
+.scroll-down-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 15px 20px;
+  background-color:#CD7F32;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  z-index: 999;
+  justify-content: center;
+  font-size: 24px;
+}
+
+/* Hover state */
+.scroll-down-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 768px) {
+  .scroll-down-btn {
+    right: 10px;
+  }
+}
+
+
+#bottom {
+  margin-top: 100px; /* Adjust this value to match the height of the scroll down button */
+}
+
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.btn {
+  background-color: #f00;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  cursor: pointer;
+}
+
+.enhanced-link {
+  color: black;
+  Text-decoration-line:blink;
+  padding: 10px 20px;
+  background-color: #D2B48C;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  display: inline-round;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  
+}
+
+.enhanced-link:hover {
+  background-color: #f0f0f0;
+}
+.centered-pinned-nav{
+  position: fixed; /* Pins the navigation bar to the top */
+  top: 0; /* Sets the top position to 0, fixing it to the top of the viewport */
+  width: 100%; /* Makes the navigation bar span the full width of the viewport */
+  background-color: #CD7F32; /* Sets the background color */
+  padding: 10px; /* Adds some padding around the navigation links */
+}
+
+.centered-pinned-nav a {
+  text-decoration: none; /* Removes the default underline */
+  color: black; /* Sets the text color */
+  padding: 5px 10px; /* Adds some padding to the navigation links */
+  border-radius: 5px; /* Rounds the corners of the navigation links */
+}
+
+.centered-pinned-nav a:hover { /* Styles the navigation links on hover */
+  background-color: #CD7F32; /* Changes the background color on hover */
+}
+.centered-pinned-nav {
+  margin-left: 0px; /* Add 10px of horizontal space to the left of each link */
+  margin-right: 100px; /* Add 10px of horizontal space to the right of each link */
+}
+
+
+#contact {
+  background-color: #F0F0F0;
+  padding: 20px;
+}
+
+#contact h2 {
+  text-align: center;
+}
+
+#contact form {
+  width: 500px;
+  margin: 0 auto;
+}
+
+#contact label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+#contact button {
+  background-color: #CD7F32;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+

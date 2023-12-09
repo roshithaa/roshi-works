@@ -1,0 +1,37 @@
+.centered-pinned-nav{
+  position: fixed; /* Pins the navigation bar to the top */
+  top: 0; /* Sets the top position to 0, fixing it to the top of the viewport */
+  width: 100%; /* Makes the navigation bar span the full width of the viewport */
+  background-color: #CD7F32; /* Sets the background color */
+  padding: 10px; /* Adds some padding around the navigation links */
+}
+
+.centered-pinned-nav a {
+  text-decoration: none; /* Removes the default underline */
+  color: black; /* Sets the text color */
+  padding: 5px 10px; /* Adds some padding to the navigation links */
+  border-radius: 5px; /* Rounds the corners of the navigation links */
+}
+
+.centered-pinned-nav a:hover { /* Styles the navigation links on hover */
+  background-color: #CD7F32; /* Changes the background color on hover */
+}
+.centered-pinned-nav {
+  margin-left: 0px; /* Add 10px of horizontal space to the left of each link */
+  margin-right: 100px; /* Add 10px of horizontal space to the right of each link */
+}
+
+p {
+      font-style: italic;
+      font-weight: bold;
+      color: #988558;
+  }
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+  background-color: white; /* Set background color to bronze */
+  Color: #CD7F32; /* Set text color to black for contrast */
+  padding: 10px; /* Add some padding to the header */
+}
